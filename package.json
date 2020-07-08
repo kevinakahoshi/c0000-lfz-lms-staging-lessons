@@ -1,0 +1,54 @@
+{
+  "name": "lfz-lms-staging-lessons",
+  "version": "1.0.0",
+  "private": true,
+  "license": "SEE LICENSE IN LICENSE",
+  "description": "A base repository for LearningFuze coding curricula.",
+  "main": "index.js",
+  "scripts": {
+    "update-packages": "npm-check -u"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.css": [
+      "stylelint --fix"
+    ],
+    "*.html": [
+      "htmlhint"
+    ],
+    "*.{js,jsx}": [
+      "eslint --fix"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Learning-Fuze/lfz-lms-staging-lessons.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/Learning-Fuze/lfz-lms-staging-lessons/issues"
+  },
+  "homepage": "https://github.com/Learning-Fuze/lfz-lms-staging-lessons#readme",
+  "devDependencies": {
+    "babel-eslint": "10.1.0",
+    "eslint": "7.4.0",
+    "eslint-config-standard": "14.1.1",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-react": "7.20.3",
+    "eslint-plugin-standard": "4.0.1",
+    "htmlhint": "0.14.1",
+    "husky": "4.2.5",
+    "lint-staged": "10.2.11",
+    "npm-check": "5.9.2",
+    "stylelint": "13.6.1",
+    "stylelint-config-recommended": "3.0.0",
+    "stylelint-config-standard": "20.0.0"
+  }
+}
